@@ -768,6 +768,10 @@ section {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    .veille-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -786,4 +790,72 @@ section {
     .contact-card {
         padding: 2rem 1.5rem;
     }
+}
+
+
+/* Veille Technologique Section */
+.veille {
+    background: var(--dark-bg);
+}
+
+.veille-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.veille-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.veille-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.veille-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.veille-icon i {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.veille-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.veille-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.veille-card .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.veille-card .btn i {
+    margin-left: 0.5rem;
 }

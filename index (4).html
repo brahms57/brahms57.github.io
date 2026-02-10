@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahim Aourdou - Administrateur Systèmes & Réseaux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">BA<span>.</span></div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#fiches" class="nav-link">Fiches Techniques</a></li>
+                <li><a href="#veille" class="nav-link">Veille</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Bonjour, je suis</p>
+                    <h1 class="hero-title">Brahim Aourdou<br>Ben Khayi</h1>
+                    <p class="hero-description">
+                        Étudiant en BTS SIO option SISR & alternant chez prezero lamesch <br>
+                
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-server"></i>
+                    <p>Windows Server</p>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-network-wired"></i>
+                    <p>Réseaux</p>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Sécurité</p>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fab fa-linux"></i>
+                    <p>Linux</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro-text">
+                        Étudiant en BTS SIO (option SISR), je suis en alternance au sein du service informatique de Prezero lamesch au luxembourg. 
+                        Je suis passionné par l'administration des systèmes et réseaux.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">9+</div>
+                            <div class="stat-label">Compétences acquises</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Années d'études</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99%</div>
+                            <div class="stat-label">Motivation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Projets</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Découvrez mes réalisations techniques durant ma formation</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Active Directory & DNS</h3>
+                    <p>Mise en place complète d'un domaine Windows avec gestion centralisée des utilisateurs, 
+                    configuration DNS et création de zones de recherche inversée.</p>
+                    <div class="project-tags">
+                        <span class="tag">AD</span>
+                        <span class="tag">DNS</span>
+                        <span class="tag">Windows Server</span>
+                    </div>
+                    <a href="projets/AD-DNS-Windows.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Stratégies de groupe (GPO)</h3>
+                    <p>Création et déploiement de GPO pour la gestion automatisée des lecteurs réseau et 
+                    la configuration centralisée des postes de travail.</p>
+                    <div class="project-tags">
+                        <span class="tag">GPO</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <a href="projets/GPO.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Serveur de Fichiers</h3>
+                    <p>Configuration d'un serveur de fichiers avec gestion avancée des droits NTFS, ABE 
+                    (Access Based Enumeration) et clichés instantanés pour la récupération de données.</p>
+                    <div class="project-tags">
+                        <span class="tag">File Server</span>
+                        <span class="tag">NTFS</span>
+                        <span class="tag">ABE</span>
+                    </div>
+                    <a href="projets/Serveur_de_fichier.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-save"></i>
+                    </div>
+                    <h3>Sauvegarde avec Veeam</h3>
+                    <p>Déploiement d'une solution de sauvegarde professionnelle avec Veeam Backup & Replication 
+                    pour assurer la continuité d'activité et la protection des données critiques.</p>
+                    <div class="project-tags">
+                        <span class="tag">Veeam</span>
+                        <span class="tag">Backup</span>
+                        <span class="tag">Recovery</span>
+                    </div>
+                    <a href="projets/VEEAM_BKP.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Supervision PRTG</h3>
+                    <p>Installation et configuration d'un serveur de supervision réseau avec PRTG pour le 
+                    monitoring en temps réel des équipements et des services critiques.</p>
+                    <div class="project-tags">
+                        <span class="tag">PRTG</span>
+                        <span class="tag">Monitoring</span>
+                        <span class="tag">Alerting</span>
+                    </div>
+                    <a href="projets/superviseur_PRTG.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Serveur RDS</h3>
+                    <p>Mise en place d'un serveur de bureau à distance (RDS) avec gestion des licences, 
+                    restrictions GPO et sécurisation des accès utilisateurs.</p>
+                    <div class="project-tags">
+                        <span class="tag">RDS</span>
+                        <span class="tag">Remote Desktop</span>
+                        <span class="tag">Security</span>
+                    </div>
+                    <a href="projets/serveur_RDS.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>GLPI & LDAP</h3>
+                    <p>Déploiement d'une stack LAMP avec installation de GLPI pour la gestion de parc informatique, 
+                    liaison LDAP et automatisation de l'inventaire par GPO.</p>
+                    <div class="project-tags">
+                        <span class="tag">GLPI</span>
+                        <span class="tag">LAMP</span>
+                        <span class="tag">LDAP</span>
+                    </div>
+                    <a href="projets/GLPI.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Automatisation PowerShell</h3>
+                    <p>Développement de scripts PowerShell pour l'importation massive d'utilisateurs dans 
+                    Active Directory via fichiers CSV.</p>
+                    <div class="project-tags">
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">CSV</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <a href="projets/ShellScripting.pdf" target="_blank" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Fiches Techniques Section -->
+    <section id="fiches" class="fiches">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fiches Techniques</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Documentation technique de mes réalisations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Tableau de synthèse </h3>
+                    <p>Description de la première fiche technique avec détails sur la configuration et 
+                    les étapes de mise en œuvre du projet.</p>
+                    <a href="fiches/fiche-1.pdf" target="_blank" class="project-link">Voir la fiche <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Fiche_réalisation_1</h3>
+                    <p>Documentation complète sur la configuration et le déploiement de solutions 
+                    d'infrastructure système et réseau.</p>
+                    <a href="fiches/fiche-2.pdf" target="_blank" class="project-link">Voir la fiche <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Fiche_réalisation_2</h3>
+                    <p>Guide technique détaillant les procédures de maintenance et d'administration 
+                    des systèmes et services.</p>
+                    <a href="fiches/fiche-3.pdf" target="_blank" class="project-link">Voir la fiche <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veille Technologique Section -->
+    <section id="veille" class="veille">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Veille Technologique</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Restez informé des dernières actualités en cybersécurité et technologie</p>
+            </div>
+            <div class="veille-grid">
+                <div class="veille-card">
+                    <div class="veille-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Le Monde Informatique</h3>
+                    <p>Actualités et analyses sur les dernières tendances technologiques, le cloud computing, 
+                    la transformation digitale et l'innovation IT.</p>
+                    <a href="https://www.lemondeinformatique.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Accéder au site
+                    </a>
+                </div>
+
+                <div class="veille-card">
+                    <div class="veille-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>CERT-FR</h3>
+                    <p>Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques. 
+                    Bulletins de sécurité et alertes sur les vulnérabilités critiques.</p>
+                    <a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Accéder au site
+                    </a>
+                </div>
+
+                <div class="veille-card">
+                    <div class="veille-icon">
+                        <i class="fas fa-rss"></i>
+                    </div>
+                    <h3>Next INpact</h3>
+                    <p>Média d'information indépendant spécialisé dans le numérique, les technologies, 
+                    la cybersécurité et les enjeux de société liés au digital.</p>
+                    <a href="https://next.ink/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Accéder au site
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact & CV</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour échanger sur mes projets ou opportunités</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:brahim.aourdou@gmail.com">brahim.aourdoubenkh@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Formation</h4>
+                                <p>BTS SIO SISR - CFA Robert Schuman</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="cv/CV-Brahim-Aourdou.pdf" download class="btn btn-primary btn-large">
+                            <i class="fas fa-download"></i> Télécharger mon CV
+                        </a>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/brahim-aourdou-ben-khayi-577375250" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:brahim.aourdou@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
